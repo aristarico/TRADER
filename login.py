@@ -5,6 +5,9 @@ import MetaTrader5 as mt5
 sys.stdout.reconfigure(encoding='utf-8')
 
 # ── Fill in your credentials ──────────────────────────────────────────────────
+LOGIN    = 57424108          # replace with your MT5 account number  (integer)
+PASSWORD = "Shadrack72!"         # replace with your MT5 account password
+SERVER   = "HFMarketsKE-Demo2"         # replace with your broker server name  e.g. "ICMarkets-Demo"
 # ─────────────────────────────────────────────────────────────────────────────
 
 print("MetaTrader5 package version:", mt5.__version__)

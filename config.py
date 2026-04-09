@@ -3,8 +3,12 @@
 # =============================================================================
 
 # ── MT5 Account ───────────────────────────────────────────────────────────────
+MT5_LOGIN    = 57424108
+MT5_PASSWORD = "Shadrack72!"
+MT5_SERVER   = "HFMarketsKE-Demo2"
 
 # ── OpenAI ────────────────────────────────────────────────────────────────────
+OPENAI_API_KEY = "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"   # <-- replace this
 OPENAI_MODEL   = "gpt-5.4"                         # latest available; upgrade to gpt-4.5 when GA
 
 # ── Symbols to trade ─────────────────────────────────────────────────────────
