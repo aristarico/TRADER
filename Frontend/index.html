@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quantum Trader - Professional Terminal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation / Global Stats -->
+    <header class="top-nav">
+        <div class="logo-section">
+            <div class="bot-icon">⟁</div>
+            <h1>Quantum AI Trader</h1>
+        </div>
+        <div class="global-metrics">
+            <div class="g-metric"><span class="label">Balance</span><span class="val" id="accBalance">$0.00</span></div>
+            <div class="g-metric"><span class="label">Leverage</span><span class="val" id="accLev">1:0</span></div>
+            <div class="g-metric"><span class="label">Total Trades</span><span class="val" id="totTrades">0</span></div>
+            <div class="g-metric"><span class="label">Win Rate</span><span class="val" id="winRate">0.0%</span></div>
+            <div class="g-metric"><span class="label">Wins</span><span class="val win" id="totWins">0</span></div>
+            <div class="g-metric"><span class="label">Losses</span><span class="val loss" id="totLosses">0</span></div>
+        </div>
+        <div class="controls">
+            <button id="masterToggle" class="btn primary">Start AI Engine</button>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <!-- Left: Currency Pairs List -->
+        <aside class="pairs-sidebar">
+            <div class="sidebar-header">Market Watchlist</div>
+            <ul class="pairs-list" id="pairsList">
+                <!-- Populated by script.js -->
+            </ul>
+
+            <!-- Active Trade Status -->
+            <div class="active-trade-section sidebar-trade">
+                <h3>Active Trade Status</h3>
+                <div class="trade-card" id="tradeCard">
+                    <!-- Trade info populated here -->
+                    <div class="no-trade">No active trade for this pair.</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right: Detail View -->
+        <main class="pair-detail" id="pairDetailView">
+            <div class="detail-header">
+                <h2 id="activePairTitle">Select a Pair</h2>
+                <div class="pair-status" id="activePairStatus">Idle</div>
+            </div>
+
+            <!-- Zones Mapping -->
+            <div class="zones-grid">
+                <div class="zone-card supply">
+                    <h3>Supply Zones</h3>
+                    <div id="zSupply">--</div>
+                </div>
+                <div class="zone-card demand">
+                    <h3>Demand Zones</h3>
+                    <div id="zDemand">--</div>
+                </div>
+                <div class="zone-card liquidity">
+                    <h3>Liquidity Pools</h3>
+                    <div id="zLiquidity">--</div>
+                </div>
+                <div class="zone-card ai-summary">
+                    <h3>AI Summary</h3>
+                    <div id="zAiSummary">--</div>
+                </div>
+            </div>
+
+            <!-- Live Analysis Log -->
+            <div class="analysis-section">
+                <h3>Live AI Analysis Feed <span>(Pair Specific)</span></h3>
+                <div class="terminal-log" id="aiLog">
+                    <!-- Logs populated here -->
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
