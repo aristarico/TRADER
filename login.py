@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 import sys
 import MetaTrader5 as mt5
+import config
 
 sys.stdout.reconfigure(encoding='utf-8')
 
 # ── Fill in your credentials ──────────────────────────────────────────────────
-LOGIN    = 57424108          # replace with your MT5 account number  (integer)
-PASSWORD = "Shadrack72!"         # replace with your MT5 account password
-SERVER   = "HFMarketsKE-Demo2"         # replace with your broker server name  e.g. "ICMarkets-Demo"
+LOGIN    = 53075604        # replace with your MT5 account number  (integer)
+PASSWORD = "y!2PMopLMe!GGo"         # replace with your MT5 account password
+SERVER   = "ICMarketsKE-Demo"         # replace with your broker server name  e.g. "ICMarkets-Demo"
 # ─────────────────────────────────────────────────────────────────────────────
 
 print("MetaTrader5 package version:", mt5.__version__)
@@ -22,6 +23,11 @@ print("Terminal info:", mt5.terminal_info())
 print("MT5 version  :", mt5.version())
 
 # Log in to the trading account
+if not LOGIN or not PASSWORD or not SERVER:
+    print("[FAIL] Missing MT5 credentials in env/.env (MT5_LOGIN, MT5_PASSWORD, MT5_SERVER).")
+    mt5.shutdown()
+    quit()
+
 authorized = mt5.login(LOGIN, password=PASSWORD, server=SERVER)
 
 if authorized:

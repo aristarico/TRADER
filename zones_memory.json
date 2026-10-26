@@ -1,0 +1,103 @@
+{
+  "XAUUSD": [
+    {
+      "id": "SUP_H1_4210",
+      "type": "supply",
+      "timeframe": "H1",
+      "high": 4217.23,
+      "low": 4208.0,
+      "description": "H1 supply at the Oct 12 Asian-session spike high where the push up was fully reversed",
+      "created_at": "2026-10-12 08:56",
+      "last_seen": "2026-10-12 12:39",
+      "times_tested": 9
+    },
+    {
+      "id": "KEY_M15_4180",
+      "type": "key_level",
+      "timeframe": "M15",
+      "high": 4181.5,
+      "low": 4179.0,
+      "description": "M15 broken support (Oct 12 05:30 low 4179.41) now acting as resistance on any retest",
+      "created_at": "2026-10-12 08:56",
+      "last_seen": "2026-10-12 12:39",
+      "times_tested": 9
+    },
+    {
+      "id": "LIQ_H4_4126",
+      "type": "liquidity_pool",
+      "timeframe": "H4",
+      "high": 4135.0,
+      "low": 4123.0,
+      "description": "Sell-side liquidity cluster from repeated lows Oct 5-8 (4123-4126); downside target if 4160 breaks",
+      "created_at": "2026-10-12 08:56",
+      "last_seen": "2026-10-12 12:39",
+      "times_tested": 9
+    },
+    {
+      "id": "SUP_M15_4178",
+      "type": "supply",
+      "timeframe": "M15",
+      "high": 4178.6,
+      "low": 4176.5,
+      "description": "M15 lower-high bounce (09:00-09:25 UTC) that failed at 4178.53 before the next leg down",
+      "created_at": "2026-10-12 09:48",
+      "last_seen": "2026-10-12 13:12",
+      "times_tested": 7
+    },
+    {
+      "id": "SUP_M15_4170",
+      "type": "supply",
+      "timeframe": "M15",
+      "high": 4172.75,
+      "low": 4169.2,
+      "description": "M15 breakdown candle (12:15) that swept the 4167.4 low and closed at 4163.94; any retest is a bearish reaction level",
+      "created_at": "2026-10-12 12:29",
+      "last_seen": "2026-10-12 12:39",
+      "times_tested": 2
+    },
+    {
+      "id": "SUP_H1_4165",
+      "type": "supply",
+      "timeframe": "H1",
+      "high": 4168.5,
+      "low": 4162.0,
+      "description": "Former H1 demand (Oct 8-9 breakout base) broken at 12:35 with a violent M5 close at 4154.8; now a flipped supply and retest zone",
+      "created_at": "2026-10-12 12:39",
+      "last_seen": "2026-10-12 12:57",
+      "times_tested": 1
+    },
+    {
+      "id": "KEY_H1_4155",
+      "type": "key_level",
+      "timeframe": "H1",
+      "high": 4158.0,
+      "low": 4152.0,
+      "description": "H1 EMA200 area (~4155) and the first support under the broken demand; price is trading through it now, watch for a hold or a failed-bounce retest",
+      "created_at": "2026-10-12 12:39",
+      "last_seen": "2026-10-12 12:39",
+      "times_tested": 0
+    },
+    {
+      "id": "LIQ_M5_4155",
+      "type": "liquidity_pool",
+      "timeframe": "M5",
+      "high": 4158.0,
+      "low": 4154.5,
+      "description": "M5 sweep low at 4154.66 (12:35) with a sharp 10-point snap-back; near-term sell-side liquidity already taken, support for relief bounce",
+      "created_at": "2026-10-12 12:57",
+      "last_seen": "2026-10-12 12:57",
+      "times_tested": 0
+    },
+    {
+      "id": "LIQ_M5_4162",
+      "type": "liquidity_pool",
+      "timeframe": "M5",
+      "high": 4163.0,
+      "low": 4162.0,
+      "description": "Equal-low cluster at 4162.0-4162.3 (12:25 and 12:55 lows); a break would target the 4154.66 sweep low",
+      "created_at": "2026-10-12 13:00",
+      "last_seen": "2026-10-12 13:00",
+      "times_tested": 0
+    }
+  ]
+}
